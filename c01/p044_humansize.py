@@ -40,3 +40,8 @@ def approximate_size(size, a_kilobyte_is_1024_bytes=True):
 if __name__ == '__main__':
     print(approximate_size(1000000000000, False))
     print(approximate_size(1000000000000))
+
+"""
+1.0 TB
+931.3 GiB
+"""
