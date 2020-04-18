@@ -1,4 +1,5 @@
-import sys, pprint
+import pprint
+import sys
 
 pprint.pprint(sys.path)
 print()
@@ -16,7 +17,7 @@ print()
 pprint.pprint(sys.path)
 
 """
-['/Users/moqi/Documents/Code/dive-into-python3-practice/c01',
+['/Users/moqi/Documents/Code/dive-into-python3-practice/c02',
  '/Users/moqi/Documents/Code/dive-into-python3-practice',
  '/Users/moqi/Library/Application '
  'Support/JetBrains/Toolbox/apps/PyCharm-P/ch-0/201.6668.28/PyCharm 2020.1 '
@@ -33,7 +34,7 @@ pprint.pprint(sys.path)
 <module 'sys' (built-in)>
 
 ['/Users/moqi/Documents/Code/automate-the-boring-stuff',
- '/Users/moqi/Documents/Code/dive-into-python3-practice/c01',
+ '/Users/moqi/Documents/Code/dive-into-python3-practice/c02',
  '/Users/moqi/Documents/Code/dive-into-python3-practice',
  '/Users/moqi/Library/Application '
  'Support/JetBrains/Toolbox/apps/PyCharm-P/ch-0/201.6668.28/PyCharm 2020.1 '

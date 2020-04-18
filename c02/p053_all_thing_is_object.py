@@ -1,4 +1,4 @@
-import c01.p044_humansize as humansize
+import c02.p044_humansize as humansize
 
 print(humansize.approximate_size(4096, True))
 print()
