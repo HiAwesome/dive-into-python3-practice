@@ -13,7 +13,7 @@ a_list.insert(0, '****')
 print(a_list)
 
 """
-/usr/local/bin/python3 /Users/moqi/Documents/Code/dive-into-python3-practice/c03/p072_list_add.py
+/usr/local/bin/python3 /Users/moqi/Documents/Code/dive-into-python3-practice/c03/p078_list_add.py
 ['a', 2.0, 3]
 ['a', 2.0, 3, True]
 ['a', 2.0, 3, True, 'four', '&']

@@ -14,7 +14,7 @@ False
 3
 2
 Traceback (most recent call last):
-  File "/Users/moqi/Documents/Code/dive-into-python3-practice/c03/p078_list_search.py", line 8, in <module>
+  File "/Users/moqi/Documents/Code/dive-into-python3-practice/c03/p079_list_search.py", line 8, in <module>
     print(a_list.index('c'))
 ValueError: 'c' is not in list
 """

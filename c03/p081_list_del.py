@@ -24,7 +24,7 @@ new
 ['a', 'mpilgrim', 'new']
 ['a', 'mpilgrim']
 Traceback (most recent call last):
-  File "/Users/moqi/Documents/Code/dive-into-python3-practice/c03/p078_list_del.py", line 16, in <module>
+  File "/Users/moqi/Documents/Code/dive-into-python3-practice/c03/p081_list_del.py", line 16, in <module>
     a_list.remove('new')
 ValueError: list.remove(x): x not in list
 """
