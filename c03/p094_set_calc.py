@@ -16,6 +16,15 @@ print(b_set.symmetric_difference(a_set) == a_set.symmetric_difference(b_set))
 print(b_set.union(a_set) == a_set.union(b_set))
 print(b_set.intersection(a_set) == a_set.intersection(b_set))
 print(b_set.difference(a_set) == a_set.difference(b_set))
+print()
+
+c_set = {1,2,3}
+d_set = {1,2,3,4}
+print(c_set.issubset(d_set))
+print(d_set.issuperset(c_set))
+c_set.add(5)
+print(c_set.issubset(d_set))
+print(d_set.issuperset(c_set))
 
 """
 {2, 3, 4, 5, 6, 196}
@@ -31,5 +40,10 @@ False
 True
 True
 True
+False
+
+True
+True
+False
 False
 """
