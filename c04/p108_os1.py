@@ -1,7 +1,7 @@
 import os
 
 print(os.getcwd())
-os.chdir('/Users/moqi/Downloads/output')
+os.chdir('../resource/output')
 print(os.getcwd())
 
 print()
@@ -25,7 +25,7 @@ print(extension)
 
 """
 /Users/moqi/Documents/Code/dive-into-python3-practice/c04
-/Users/moqi/Downloads/output
+../resource/output
 
 /Users/moqi/Documents/Code/dive-into-python3-practice/c04/p108_os1.py
 /Users/moqi/Documents/Code/dive-into-python3-practice/c04/p108_os1.py

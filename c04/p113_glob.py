@@ -2,7 +2,7 @@ import glob
 import os
 import pprint
 
-os.chdir('/Users/moqi/Downloads/output')
+os.chdir('../resource/output')
 pprint.pprint(glob.glob('withLogo/*.png'))
 print()
 pprint.pprint(glob.glob('*.png'))
