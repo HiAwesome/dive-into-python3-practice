@@ -34,3 +34,15 @@ if __name__ == '__main__':
         print(plural(sys.argv[1]))
     else:
         print(__doc__)
+
+"""
+在本目录命令行执行以下代码：
+-> % python3 p202_plural5.py hello
+hellos
+-> % python3 p202_plural5.py agency
+agencies
+-> % python3 p202_plural5.py coach 
+coaches
+-> % python3 p202_plural5.py hours
+hourses
+"""
