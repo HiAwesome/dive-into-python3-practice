@@ -29,3 +29,15 @@ if __name__ == '__main__':
         solution = solve(puzzle)
         if solution:
             print(solution)
+
+"""
+-> % python3 p228_alphametics.py "HAWAII + IDAHO + IOWA + OHIO == STATES"
+HAWAII + IDAHO + IOWA + OHIO == STATES
+510199 + 98153 + 9301 + 3593 == 621246
+-> % python3 p228_alphametics.py "I + LOVE + YOU == DORA"
+I + LOVE + YOU == DORA
+3 + 1458 + 946 == 2407
+-> % python3 p228_alphametics.py "SEND + MORE == MONEY"
+SEND + MORE == MONEY
+9567 + 1085 == 10652
+"""
