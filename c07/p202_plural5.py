@@ -20,7 +20,7 @@ def rules(rules_filename):
             yield build_match_add_apply_functions(pattern, search, replace)
 
 
-def plural(noun, rules_filename='../resource/txt/plural4-rules.txt'):
+def plural(noun, rules_filename='../resource/txt/plural5-rules.txt'):
     for matches_rule, apply_rule in rules(rules_filename):
         if matches_rule(noun):
             return apply_rule(noun)
