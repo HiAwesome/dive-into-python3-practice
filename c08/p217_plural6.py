@@ -14,10 +14,10 @@ def build_match_add_apply_functions(pattern, search, replace):
 
 
 class LazyRules:
-    __rules_filename = '../resource/txt/plural6-rules.txt'
+    rules_filename = '../resource/txt/plural6-rules.txt'
 
     def __init__(self):
-        self.pattern_file = open(self.__rules_filename, encoding='utf-8')
+        self.pattern_file = open(self.rules_filename, encoding='utf-8')
         self.cache = []
 
     def __iter__(self):
