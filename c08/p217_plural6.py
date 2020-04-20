@@ -48,6 +48,7 @@ rules = LazyRules()
 
 
 def plural(noun):
+    """Enter a noun to get the plural form"""
     for matches_rule, apply_rule in rules:
         if matches_rule(noun):
             return apply_rule(noun)
@@ -58,7 +59,7 @@ if __name__ == '__main__':
     if sys.argv[1:]:
         print(plural(sys.argv[1]))
     else:
-        print(__doc__)
+        print(plural.__doc__)
 
 """
 在本目录命令行执行以下代码：
