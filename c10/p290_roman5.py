@@ -44,6 +44,13 @@ def to_roman(n):
 
 def from_roman(s):
     """convert Roman numeral to integer"""
+    result = 0
+    index = 0
+    for numeral, integer in roman_numeral_map:
+        while s[index:index + len(numeral)] == numeral:
+            result += integer
+            index += len(numeral)
+    return result
 
 
 if __name__ == '__main__':
