@@ -1,4 +1,8 @@
 class OutOfRangeErrer(ValueError):
+    """
+    事实上，异常类可以不做任何事情，但是至少添加一行代码使其成为一个类。
+    pass 的真正意思是什么都不做，但是它是一行 Python 代码，所以可以使其成为类。
+    """
     pass
 
 
