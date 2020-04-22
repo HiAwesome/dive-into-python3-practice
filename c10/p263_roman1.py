@@ -21,5 +21,18 @@ def to_roman(n):
         while n >= integer:
             result += numeral
             n -= integer
+            print('subtracting {0} from input, adding {1} to output'.format(integer, numeral))
 
     return result
+
+
+if __name__ == '__main__':
+    to_roman(1424)
+
+"""
+subtracting 1000 from input, adding M to output
+subtracting 400 from input, adding CD to output
+subtracting 10 from input, adding X to output
+subtracting 10 from input, adding X to output
+subtracting 4 from input, adding IV to output
+"""
