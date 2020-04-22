@@ -64,7 +64,8 @@ class KnowValues(unittest.TestCase):
     def test_to_roman_know_values(self):
         """to_roman should give known result with known input"""
         for integer, numeral in self.known_values:
-            self.assertEqual(numeral, p263_roman1.to_roman(integer))
+            result = p263_roman1.to_roman(integer)
+            self.assertEqual(numeral, result)
 
 
 if __name__ == '__main__':
