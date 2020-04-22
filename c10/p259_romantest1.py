@@ -1,6 +1,6 @@
 import unittest
 
-import p263_roman1
+import p263_roman1 as roman
 
 
 class KnowValues(unittest.TestCase):
@@ -64,7 +64,7 @@ class KnowValues(unittest.TestCase):
     def test_to_roman_know_values(self):
         """to_roman should give known result with known input"""
         for integer, numeral in self.known_values:
-            result = p263_roman1.to_roman(integer)
+            result = roman.to_roman(integer)
             self.assertEqual(numeral, result)
 
 
