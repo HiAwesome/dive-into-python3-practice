@@ -1,6 +1,6 @@
-path = '../resource/txt/chinese.txt'
+from file_path_collect import chinese_txt_path
 
-a_file = open(path, encoding='utf-8')
+a_file = open(chinese_txt_path, encoding='utf-8')
 
 print(a_file.name)
 print(a_file.encoding)
@@ -8,7 +8,7 @@ print(a_file.mode)
 print(a_file.readlines())
 print()
 
-a_file = open(path, encoding='utf-8')
+a_file = open(chinese_txt_path, encoding='utf-8')
 print(a_file.read())
 # 第二行已经没有数据了，所以是空行
 print(a_file.read())
