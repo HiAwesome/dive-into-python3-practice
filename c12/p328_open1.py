@@ -31,7 +31,33 @@ print(a_file.seek(18))
 为什么这里会失败？因为在第18个字节处不存在字符。距离此处最近的字符从第17个字节开始（长度为三个字节）。
 试图从一个字符的中间位置读取会导致程序以UnicodeDecodeError错误失败。
 """
-print(a_file.read(1))
+try:
+    print(a_file.read(1))
+except UnicodeDecodeError as err:
+    print(err)
+print()
+
+a_file.close()
+
+try:
+    print(a_file.read())
+except ValueError as err:
+    print(err)
+
+try:
+    print(a_file.seek(0))
+except ValueError as err:
+    print(err)
+
+try:
+    print(a_file.tell())
+except ValueError as err:
+    print(err)
+print()
+
+# 也许你会有些意外，文件已经关闭，调用原来流对象的close()方法并没有引发异常。其实那只是一个空操作(no‐op)而已。
+a_file.close()
+print(a_file.closed)
 
 """
 ../resource/txt/chinese.txt
@@ -53,10 +79,11 @@ Dive Into Python
 20
 
 18
-Traceback (most recent call last):
-  File "/Users/moqi/Code/dive-into-python3-practice/c12/p328_open1.py", line 30, in <module>
-    print(a_file.read(1))
-  File "/usr/local/Cellar/python/3.7.7/Frameworks/Python.framework/Versions/3.7/lib/python3.7/codecs.py", line 322, in decode
-    (result, consumed) = self._buffer_decode(data, self.errors, final)
-UnicodeDecodeError: 'utf-8' codec can't decode byte 0x98 in position 0: invalid start byte
+'utf-8' codec can't decode byte 0x98 in position 0: invalid start byte
+
+I/O operation on closed file.
+I/O operation on closed file.
+I/O operation on closed file.
+
+True
 """
