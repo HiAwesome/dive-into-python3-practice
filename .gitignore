@@ -1,3 +1,6 @@
 .idea
 *.DS_Store
 *.pyc
+
+# output txt
+resource/txt/output/*
