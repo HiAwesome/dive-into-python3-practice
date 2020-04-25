@@ -7,3 +7,7 @@ resource/txt/output/*
 
 # output pickle
 resource/pickle/*
+
+# output json
+resource/json/*
+
