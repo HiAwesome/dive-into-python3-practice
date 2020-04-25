@@ -4,3 +4,6 @@
 
 # output txt
 resource/txt/output/*
+
+# output pickle
+resource/pickle/*
