@@ -11,3 +11,5 @@ resource/pickle/*
 # output json
 resource/json/*
 
+# httplib2 cache dir
+c15/.cache
