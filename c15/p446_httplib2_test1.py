@@ -6,10 +6,16 @@ h = httplib2.Http('.cache')
 response, content = h.request('https://weibo.com/')
 
 print(response.status)
+print()
+
 pprint(content[:1000])
+print()
+
+print(len(content))
 
 """
 200
+
 (b'<!DOCTYPE html>\n<html>\n<head>\n    <meta http-equiv="Content-type" conten'
  b't="text/html; charset=gb2312"/>\n    <title>Sina Visitor System</title>\n<'
  b'/head>\n<body>\n<span id="message"></span>\n<script type="text/javascript" '
@@ -25,4 +31,6 @@ pprint(content[:1000])
  b'     this[document.all ? "onreadystatechange" : "onload"] = null;\n      '
  b'              this.parentNode.removeChild(this);\n                    if '
  b'(c) {\n                        c()\n          ')
+ 
+6117
 """
