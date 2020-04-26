@@ -2,7 +2,9 @@ from pprint import pprint
 
 import httplib2
 
-h = httplib2.Http('.cache')
+from file_path_collect import output_cache_path_dir as cache
+
+h = httplib2.Http(cache)
 response, content = h.request('https://weibo.com/')
 
 print(response.status)

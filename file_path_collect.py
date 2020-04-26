@@ -12,3 +12,4 @@ feed_ns0_xml_path = '../resource/xml/feed-ns0.xml'
 
 output_pickle_path_dir = '../resource/pickle/'
 output_json_path_dir = '../resource/json/'
+output_cache_path_dir = '../resource/cache/'
