@@ -2,7 +2,7 @@ import json
 import time
 from pprint import pprint
 
-from c14.p422_customerializer3 import to_json, from_json
+from p422_customerializer3 import to_json, from_json
 from file_path_collect import output_json_path_dir as json_output
 
 entry = {'title': 'Divve into history, 2009 edition',

@@ -1,4 +1,4 @@
-from c08.p209_fib_class import Fib
+from p209_fib_class import Fib
 
 for n in Fib(1000):
     print(n, end=' ')

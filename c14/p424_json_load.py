@@ -1,7 +1,7 @@
 import json
 from pprint import pprint
 
-from c14.p422_customerializer3 import from_json
+from p422_customerializer3 import from_json
 from file_path_collect import output_json_path_dir as out
 
 with open(out + 'entry.json', 'r', encoding='utf-8') as f:
