@@ -1,4 +1,4 @@
-# 深入 Python3 代码练习
+# [深入 Python3](https://book.douban.com/subject/3628911/) 代码练习
 
 ## P305 控制需求变化
 
